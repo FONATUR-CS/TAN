@@ -1,19 +1,19 @@
-id,Tipo,Subtipo,nombre
+Ôªøid,Tipo,Subtipo,Nombre
 punto_1,Servicios,GN,Guardia Nacional
 punto_2,Servicios,gas,Gasolinera del Bienestar
-punto_3,Transporte,estacion_calakmul,EstaciÛn Calakmul
+punto_3,Transporte,estacion_calakmul,Estaci√≥n Calakmul
 punto_4,Servicios,estacionamiento,Estacionamiento Calakmul
-punto_5,Transporte,estacion_xpujil,EstaciÛn Xpujil
-punto_6,Transporte,estacion_centenario,EstaciÛn Centenario
-punto_7,Atrativos,1,Cueva de los murciÈlagos
+punto_5,Transporte,estacion_xpujil,Estaci√≥n Xpujil
+punto_6,Transporte,estacion_centenario,Estaci√≥n Centenario
+punto_7,Atrativos,1,Cueva de los murci√©lagos
 punto_8,Atrativos,2,Dormitorio de los monos
 punto_9,Atrativos,3,Aguada Km 27-Cocodrilo y venados
 punto_10,Atrativos,4,"Aguada km 15, Tapires"
 punto_11,Atrativos,5,Laguna de Sylvituc
-punto_12,Zonas ArqueolÛgicas,6,Zona ArqueolÛgica Xpuhil
-punto_13,Zonas ArqueolÛgicas,2,Zona ArqueolÛgica de Nadzca'an
-punto_14,Zonas ArqueolÛgicas,3,Zona ArqueolÛgica de Calakmul
-punto_15,Zonas ArqueolÛgicas,4,Zona ArqueolÛgica de Bec·n
-punto_16,Zonas ArqueolÛgicas,1,Zona ArqueolÛgica de Balamk˙
-punto_17,Zonas ArqueolÛgicas,5,Zona ArqueolÛgica Chicann·
+punto_12,Zonas Arqueol√≥gicas,6,Zona Arqueol√≥gica Xpuhil
+punto_13,Zonas Arqueol√≥gicas,2,Zona Arqueol√≥gica de Nadzca'an
+punto_14,Zonas Arqueol√≥gicas,3,Zona Arqueol√≥gica de Calakmul
+punto_15,Zonas Arqueol√≥gicas,4,Zona Arqueol√≥gica de Bec√°n
+punto_16,Zonas Arqueol√≥gicas,1,Zona Arqueol√≥gica de Balamk√∫
+punto_17,Zonas Arqueol√≥gicas,5,Zona Arqueol√≥gica Chicann√°
 punto_18,Ecoaldea,tanaj,Tanaj

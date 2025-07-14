@@ -1,9 +1,4 @@
 
-document.getElementById("legend-toggle").addEventListener("click", function () {
-  var legend = document.getElementById("legend");
-  legend.style.display = legend.style.display === "none" ? "block" : "none";
-});
-
 document.querySelectorAll(".legend-item").forEach(function (item) {
   item.addEventListener("click", function () {
     var lat = parseFloat(this.dataset.lat);

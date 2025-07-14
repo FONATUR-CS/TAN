@@ -26,7 +26,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_97541debda27e976aa937bcb6444cf19 {
+                #map_51269341f171e8bc3086b6bd1bd92820 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -41,18 +41,18 @@
     <button id="legend-toggle">🧭 Simbología</button><div id="legend"><h4>Simbología</h4></div>
     <script src="script.js"></script>
     
-            <div class="folium-map" id="map_97541debda27e976aa937bcb6444cf19" ></div>
+            <div class="folium-map" id="map_51269341f171e8bc3086b6bd1bd92820" ></div>
         
 </body>
 <script>
     
     
-            var map_97541debda27e976aa937bcb6444cf19 = L.map(
-                "map_97541debda27e976aa937bcb6444cf19",
+            var map_51269341f171e8bc3086b6bd1bd92820 = L.map(
+                "map_51269341f171e8bc3086b6bd1bd92820",
                 {
-                    center: [18.5097, -89.3911],
+                    center: [18.5376569, -89.9006171],
                     crs: L.CRS.EPSG3857,
-                    zoom: 12,
+                    zoom: 13,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -62,38 +62,38 @@
 
         
     
-            var tile_layer_aae6c3d4cb0c1c0aece88fd5fb03d2cb = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_97541debda27e976aa937bcb6444cf19);
+            var tile_layer_533fca478938cc78ef835adf1d4fec12 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Esri", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_51269341f171e8bc3086b6bd1bd92820);
         
     
-            var marker_8bbc4fcb8f1d09f1f74dc1b4d4690f23 = L.marker(
-                [18.5097, -89.3911],
+            var marker_44005fed27b83abfe42700e3cae9a809 = L.marker(
+                [18.5376569, -89.9006171],
                 {}
-            ).addTo(map_97541debda27e976aa937bcb6444cf19);
+            ).addTo(map_51269341f171e8bc3086b6bd1bd92820);
         
     
-            var icon_37f01b751d2e65c948148edda9da92f3 = L.AwesomeMarkers.icon(
+            var icon_153d0fa35690fe6b6f8dd6173c860c28 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_8bbc4fcb8f1d09f1f74dc1b4d4690f23.setIcon(icon_37f01b751d2e65c948148edda9da92f3);
+            marker_44005fed27b83abfe42700e3cae9a809.setIcon(icon_153d0fa35690fe6b6f8dd6173c860c28);
         
     
-        var popup_56833310c27efd3987f27cc6aa78a0f4 = L.popup({"maxWidth": "100%"});
+        var popup_e7921257d41f7dd7517f48a72d8d7e9e = L.popup({"maxWidth": "100%"});
 
         
-            var html_352bf7f30804d496c7a1636006396fc4 = $(`<div id="html_352bf7f30804d496c7a1636006396fc4" style="width: 100.0%; height: 100.0%;">Aquí estás</div>`)[0];
-            popup_56833310c27efd3987f27cc6aa78a0f4.setContent(html_352bf7f30804d496c7a1636006396fc4);
+            var html_994cfb6c01d6b38d737f879de89eeaf1 = $(`<div id="html_994cfb6c01d6b38d737f879de89eeaf1" style="width: 100.0%; height: 100.0%;">Aquí estás</div>`)[0];
+            popup_e7921257d41f7dd7517f48a72d8d7e9e.setContent(html_994cfb6c01d6b38d737f879de89eeaf1);
         
 
-        marker_8bbc4fcb8f1d09f1f74dc1b4d4690f23.bindPopup(popup_56833310c27efd3987f27cc6aa78a0f4)
+        marker_44005fed27b83abfe42700e3cae9a809.bindPopup(popup_e7921257d41f7dd7517f48a72d8d7e9e)
         ;
 
         
     
     
-            marker_8bbc4fcb8f1d09f1f74dc1b4d4690f23.bindTooltip(
+            marker_44005fed27b83abfe42700e3cae9a809.bindTooltip(
                 `<div>
                      Aquí estás
                  </div>`,
@@ -101,18 +101,18 @@
             );
         
     
-            var layer_control_73dbc5a45419a4344c995fcec3aa3362 = {
+            var layer_control_5b7c5f78776dfe7cc0b46aea88aa080f = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_aae6c3d4cb0c1c0aece88fd5fb03d2cb,
+                    "Esri Satellite" : tile_layer_533fca478938cc78ef835adf1d4fec12,
                 },
                 overlays :  {
                 },
             };
             L.control.layers(
-                layer_control_73dbc5a45419a4344c995fcec3aa3362.base_layers,
-                layer_control_73dbc5a45419a4344c995fcec3aa3362.overlays,
+                layer_control_5b7c5f78776dfe7cc0b46aea88aa080f.base_layers,
+                layer_control_5b7c5f78776dfe7cc0b46aea88aa080f.overlays,
                 {"autoZIndex": true, "collapsed": false, "position": "topright"}
-            ).addTo(map_97541debda27e976aa937bcb6444cf19);
+            ).addTo(map_51269341f171e8bc3086b6bd1bd92820);
         
 </script>
 </html>

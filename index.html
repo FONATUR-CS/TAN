@@ -1,30 +1,27 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<script>
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
         </script>
-    
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
+<style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+<style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" rel="stylesheet"/>
+<meta content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<style>
                 #map_28f93d986d40a553ec81187271fc34f9 {
                     position: relative;
                     width: 100.0%;
@@ -33,15 +30,11 @@
                     top: 0.0%;
                 }
             </style>
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css" rel="stylesheet"/>
 </head>
 <body>
-    
-    
-            <div class="folium-map" id="map_28f93d986d40a553ec81187271fc34f9" ></div>
-    
+<div class="folium-map" id="map_28f93d986d40a553ec81187271fc34f9"></div>
 <style>
 .legend {
   position: absolute;
@@ -83,113 +76,89 @@
   object-fit: contain;
 }
 </style>
-    
-<div id="legend" class="legend">
-  <div class="legend-toggle" onclick="this.classList.toggle('collapsed')">
+<div class="legend" id="legend">
+<div class="legend-toggle" onclick="this.classList.toggle('collapsed')">
     🧭 <strong>Simbología</strong>
-  </div>
-
-    <div class="legend-group">
-      <div class="legend-title" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Atractivos</div>
-      <ul class="legend-items" style="display:none">
-    
-        <li onclick="zoomTo('Laguna_de_Sylvituc')" data-id="Laguna_de_Sylvituc" data-lat="18.6395458" data-lon="-90.2804921">
-          <img src="iconos/punto_11.png" class="legend-icon"><span>Laguna de Sylvituc - 45 km de distancia</span>
-        </li>
-        
-        <li onclick="zoomTo('Aguada_Km_27-Cocodrilo_y_venados')" data-id="Aguada_Km_27-Cocodrilo_y_venados" data-lat="18.3082781" data-lon="-89.857044">
-          <img src="iconos/punto_9.png" class="legend-icon"><span>Aguada Km 27-Cocodrilo y venados</span>
-        </li>
-        
-        <li onclick="zoomTo('Aguada_km_15_Tapires')" data-id="Aguada_km_15_Tapires" data-lat="18.3889335" data-lon="-89.8977838">
-          <img src="iconos/punto_10.png" class="legend-icon"><span>Aguada km 15, Tapires</span>
-        </li>
-        
-        <li onclick="zoomTo('Dormitorio_de_los_monos')" data-id="Dormitorio_de_los_monos" data-lat="18.2482375" data-lon="-89.8059097">
-          <img src="iconos/punto_8.png" class="legend-icon"><span>Dormitorio de los monos</span>
-        </li>
-        
-        <li onclick="zoomTo('Cueva_de_los_murcielagos')" data-id="Cueva_de_los_murcielagos" data-lat="18.5234222" data-lon="-89.8238143">
-          <img src="iconos/punto_7.png" class="legend-icon"><span>Cueva de los murciélagos</span>
-        </li>
-        </ul></div>
-    <div class="legend-group">
-      <div class="legend-title" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Servicios</div>
-      <ul class="legend-items" style="display:none">
-    
-        <li onclick="zoomTo('Gasolinera_del_Bienestar')" data-id="Gasolinera_del_Bienestar" data-lat="18.53921982121233" data-lon="-89.90268826117062">
-          <img src="iconos/punto_2.png" class="legend-icon"><span>Gasolinera del Bienestar</span>
-        </li>
-        
-        <li onclick="zoomTo('Guardia_Nacional')" data-id="Guardia_Nacional" data-lat="" data-lon="">
-          <img src="iconos/punto_1.png" class="legend-icon"><span>Guardía Nacional</span>
-        </li>
-        
-        <li onclick="zoomTo('Estacionamiento_Calakmul')" data-id="Estacionamiento_Calakmul" data-lat="" data-lon="">
-          <img src="iconos/punto_4.png" class="legend-icon"><span>Estacionamiento Calakmul</span>
-        </li>
-        </ul></div>
-    <div class="legend-group">
-      <div class="legend-title" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Zonas Arqueológicas</div>
-      <ul class="legend-items" style="display:none">
-    
-        <li onclick="zoomTo('Zona_Arqueologica_Xpuhil')" data-id="Zona_Arqueologica_Xpuhil" data-lat="18.5106874" data-lon="-89.4063669">
-          <img src="iconos/punto_12.png" class="legend-icon"><span>Zona Arqueológica Xpuhil</span>
-        </li>
-        
-        <li onclick="zoomTo('Zona_Arqueologica_Chicanna')" data-id="Zona_Arqueologica_Chicanna" data-lat="18.5068426" data-lon="-89.4868319">
-          <img src="iconos/punto_17.png" class="legend-icon"><span>Zona Arqueológica Chicanná</span>
-        </li>
-        
-        <li onclick="zoomTo('Zona_Arqueologica_de_Becan')" data-id="Zona_Arqueologica_de_Becan" data-lat="18.516707" data-lon="-89.4657862">
-          <img src="iconos/punto_15.png" class="legend-icon"><span>Zona Arqueológica de Becán</span>
-        </li>
-        
-        <li onclick="zoomTo('Zona_Arqueologica_de_Calakmul')" data-id="Zona_Arqueologica_de_Calakmul" data-lat="18.1058665" data-lon="-89.8102324">
-          <img src="iconos/punto_14.png" class="legend-icon"><span>Zona Arqueológica de Calakmul</span>
-        </li>
-        
-        <li onclick="zoomTo('Zona_Arqueologica_de_Nadzca'an')" data-id="Zona_Arqueologica_de_Nadzca'an" data-lat="18.6067251" data-lon="-89.8461584">
-          <img src="iconos/punto_13.png" class="legend-icon"><span>Zona Arqueológica de Nadzca'an</span>
-        </li>
-        
-        <li onclick="zoomTo('Zona_Arqueologica_de_Balamku')" data-id="Zona_Arqueologica_de_Balamku" data-lat="18.5575854" data-lon="-89.9452691">
-          <img src="iconos/punto_16.png" class="legend-icon"><span>Zona Arqueológica de Balamkú</span>
-        </li>
-        </ul></div>
-    <div class="legend-group">
-      <div class="legend-title" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Transportes</div>
-      <ul class="legend-items" style="display:none">
-    
-        <li onclick="zoomTo('Estacion_Centenario')" data-id="Estacion_Centenario" data-lat="18.61234330920191" data-lon="-90.73140499093059">
-          <img src="iconos/punto_6.png" class="legend-icon"><span>Estación Centenario</span>
-        </li>
-        
-        <li onclick="zoomTo('Estacion_Calakmul')" data-id="Estacion_Calakmul" data-lat="18.5314818153254" data-lon="-89.9038826369206">
-          <img src="iconos/punto_3.png" class="legend-icon"><span>Estación Calakmul</span>
-        </li>
-        
-        <li onclick="zoomTo('Estacion_Xpujil')" data-id="Estacion_Xpujil" data-lat="18.52647219773993" data-lon="-89.39660850331184">
-          <img src="iconos/punto_5.png" class="legend-icon"><span>Estación Xpujil</span>
-        </li>
-        
-        <li onclick="zoomTo('Camino_a_la_Zona_Arqueoloica_de_Calakmul')" data-id="Camino_a_la_Zona_Arqueoloica_de_Calakmul" data-lat="18.2628645" data-lon="-89.8222834">
-          <span>Camino a la Zona Arqueolóica de Calakmul</span>
-        </li>
-        
-        <li onclick="zoomTo('Carretera_Champoton-Escarcega')" data-id="Carretera_Champoton-Escarcega" data-lat="18.9452137" data-lon="-90.7239407">
-          <span>Carretera Champotón-Escárcega</span>
-        </li>
-        
-        <li onclick="zoomTo('Carretera_Escarcega-Chetumal')" data-id="Carretera_Escarcega-Chetumal" data-lat="18.5241123" data-lon="-89.7292864">
-          <span>Carretera Escárcega-Chetumal</span>
-        </li>
-        
-        <li onclick="zoomTo('Trazo_Tren_Maya')" data-id="Trazo_Tren_Maya" data-lat="20.5058604212394" data-lon="-87.2921632640654">
-          <span>Trazo Tren Maya</span>
-        </li>
-        </ul></div></div>
-    
+</div>
+<div class="legend-group">
+<div class="legend-title" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Atractivos</div>
+<ul class="legend-items" style="display:none">
+<li class="legend-item" data-id="Laguna_de_Sylvituc" data-lat="18.6395458" data-lon="-90.2804921">
+<img class="legend-icon" src="iconos/punto_11.png"/><span>Laguna de Sylvituc - 45 km de distancia</span>
+</li>
+<li class="legend-item" data-id="Aguada_Km_27-Cocodrilo_y_venados" data-lat="18.3082781" data-lon="-89.857044">
+<img class="legend-icon" src="iconos/punto_9.png"/><span>Aguada Km 27-Cocodrilo y venados</span>
+</li>
+<li class="legend-item" data-id="Aguada_km_15_Tapires" data-lat="18.3889335" data-lon="-89.8977838">
+<img class="legend-icon" src="iconos/punto_10.png"/><span>Aguada km 15, Tapires</span>
+</li>
+<li class="legend-item" data-id="Dormitorio_de_los_monos" data-lat="18.2482375" data-lon="-89.8059097">
+<img class="legend-icon" src="iconos/punto_8.png"/><span>Dormitorio de los monos</span>
+</li>
+<li class="legend-item" data-id="Cueva_de_los_murcielagos" data-lat="18.5234222" data-lon="-89.8238143">
+<img class="legend-icon" src="iconos/punto_7.png"/><span>Cueva de los murciélagos</span>
+</li>
+</ul></div>
+<div class="legend-group">
+<div class="legend-title" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Servicios</div>
+<ul class="legend-items" style="display:none">
+<li class="legend-item" data-id="Gasolinera_del_Bienestar" data-lat="18.53921982121233" data-lon="-89.90268826117062">
+<img class="legend-icon" src="iconos/punto_2.png"/><span>Gasolinera del Bienestar</span>
+</li>
+<li class="legend-item" data-id="Guardia_Nacional" data-lat="" data-lon="">
+<img class="legend-icon" src="iconos/punto_1.png"/><span>Guardía Nacional</span>
+</li>
+<li class="legend-item" data-id="Estacionamiento_Calakmul" data-lat="" data-lon="">
+<img class="legend-icon" src="iconos/punto_4.png"/><span>Estacionamiento Calakmul</span>
+</li>
+</ul></div>
+<div class="legend-group">
+<div class="legend-title" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Zonas Arqueológicas</div>
+<ul class="legend-items" style="display:none">
+<li class="legend-item" data-id="Zona_Arqueologica_Xpuhil" data-lat="18.5106874" data-lon="-89.4063669">
+<img class="legend-icon" src="iconos/punto_12.png"/><span>Zona Arqueológica Xpuhil</span>
+</li>
+<li class="legend-item" data-id="Zona_Arqueologica_Chicanna" data-lat="18.5068426" data-lon="-89.4868319">
+<img class="legend-icon" src="iconos/punto_17.png"/><span>Zona Arqueológica Chicanná</span>
+</li>
+<li class="legend-item" data-id="Zona_Arqueologica_de_Becan" data-lat="18.516707" data-lon="-89.4657862">
+<img class="legend-icon" src="iconos/punto_15.png"/><span>Zona Arqueológica de Becán</span>
+</li>
+<li class="legend-item" data-id="Zona_Arqueologica_de_Calakmul" data-lat="18.1058665" data-lon="-89.8102324">
+<img class="legend-icon" src="iconos/punto_14.png"/><span>Zona Arqueológica de Calakmul</span>
+</li>
+<li class="legend-item" data-id="Zona_Arqueologica_de_Nadzca'an" data-lat="18.6067251" data-lon="-89.8461584">
+<img class="legend-icon" src="iconos/punto_13.png"/><span>Zona Arqueológica de Nadzca'an</span>
+</li>
+<li class="legend-item" data-id="Zona_Arqueologica_de_Balamku" data-lat="18.5575854" data-lon="-89.9452691">
+<img class="legend-icon" src="iconos/punto_16.png"/><span>Zona Arqueológica de Balamkú</span>
+</li>
+</ul></div>
+<div class="legend-group">
+<div class="legend-title" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Transportes</div>
+<ul class="legend-items" style="display:none">
+<li class="legend-item" data-id="Estacion_Centenario" data-lat="18.61234330920191" data-lon="-90.73140499093059">
+<img class="legend-icon" src="iconos/punto_6.png"/><span>Estación Centenario</span>
+</li>
+<li class="legend-item" data-id="Estacion_Calakmul" data-lat="18.5314818153254" data-lon="-89.9038826369206">
+<img class="legend-icon" src="iconos/punto_3.png"/><span>Estación Calakmul</span>
+</li>
+<li class="legend-item" data-id="Estacion_Xpujil" data-lat="18.52647219773993" data-lon="-89.39660850331184">
+<img class="legend-icon" src="iconos/punto_5.png"/><span>Estación Xpujil</span>
+</li>
+<li class="legend-item" data-id="Camino_a_la_Zona_Arqueoloica_de_Calakmul" data-lat="18.2628645" data-lon="-89.8222834">
+<span>Camino a la Zona Arqueolóica de Calakmul</span>
+</li>
+<li class="legend-item" data-id="Carretera_Champoton-Escarcega" data-lat="18.9452137" data-lon="-90.7239407">
+<span>Carretera Champotón-Escárcega</span>
+</li>
+<li class="legend-item" data-id="Carretera_Escarcega-Chetumal" data-lat="18.5241123" data-lon="-89.7292864">
+<span>Carretera Escárcega-Chetumal</span>
+</li>
+<li class="legend-item" data-id="Trazo_Tren_Maya" data-lat="20.5058604212394" data-lon="-87.2921632640654">
+<span>Trazo Tren Maya</span>
+</li>
+</ul></div></div>
 <script>
   function zoomTo(id) {
     const elementos = document.querySelectorAll(`[data-id='${id}']`);

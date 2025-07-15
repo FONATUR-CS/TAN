@@ -1,122 +1,64 @@
 
-<div id="legend" class="legend collapsed">
-  <div class="legend-toggle" onclick="this.parentElement.classList.toggle('collapsed')">
+<div id="legend" class="legend">
+  <div class="legend-toggle" onclick="this.classList.toggle('collapsed')">
     🧭 <strong>Simbología</strong>
   </div>
 
-  <div class="legend-group">
-    <div class="legend-title" onclick="this.classList.toggle('expanded')"><strong>Atractivos</strong></div>
-    <ul class="legend-items" style="display:none">
+    <div class="legend-group">
+      <div class="legend-title" onclick="this.classList.toggle('expanded')" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Atractivos</div>
+      <ul class="legend-items" style="display:none">
     
-      <li onclick="zoomTo('Laguna_de_Sylvituc')">
-        <img src="iconos/punto_11.png" class="legend-icon">
-        <span>Laguna de Sylvituc</span>
-      </li>
+        <li onclick="zoomTo('Laguna_de_Sylvituc')"><img src="iconos/punto_11.png" class="legend-icon"><span>Laguna de Sylvituc</span></li>
         
-      <li onclick="zoomTo('Aguada_Km_27-Cocodrilo_y_venados')">
-        <img src="iconos/punto_9.png" class="legend-icon">
-        <span>Aguada Km 27-Cocodrilo y venados</span>
-      </li>
+        <li onclick="zoomTo('Aguada_Km_27-Cocodrilo_y_venados')"><img src="iconos/punto_9.png" class="legend-icon"><span>Aguada Km 27-Cocodrilo y venados</span></li>
         
-      <li onclick="zoomTo('Aguada_km_15_Tapires')">
-        <img src="iconos/punto_10.png" class="legend-icon">
-        <span>Aguada km 15, Tapires</span>
-      </li>
+        <li onclick="zoomTo('Aguada_km_15_Tapires')"><img src="iconos/punto_10.png" class="legend-icon"><span>Aguada km 15, Tapires</span></li>
         
-      <li onclick="zoomTo('Dormitorio_de_los_monos')">
-        <img src="iconos/punto_8.png" class="legend-icon">
-        <span>Dormitorio de los monos</span>
-      </li>
+        <li onclick="zoomTo('Dormitorio_de_los_monos')"><img src="iconos/punto_8.png" class="legend-icon"><span>Dormitorio de los monos</span></li>
         
-      <li onclick="zoomTo('Cueva_de_los_murcielagos')">
-        <img src="iconos/punto_7.png" class="legend-icon">
-        <span>Cueva de los murciélagos</span>
-      </li>
+        <li onclick="zoomTo('Cueva_de_los_murcielagos')"><img src="iconos/punto_7.png" class="legend-icon"><span>Cueva de los murciélagos</span></li>
         </ul></div>
-  <div class="legend-group">
-    <div class="legend-title" onclick="this.classList.toggle('expanded')"><strong>Servicios</strong></div>
-    <ul class="legend-items" style="display:none">
+    <div class="legend-group">
+      <div class="legend-title" onclick="this.classList.toggle('expanded')" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Servicios</div>
+      <ul class="legend-items" style="display:none">
     
-      <li onclick="zoomTo('Gasolinera_del_Bienestar')">
-        <img src="iconos/punto_2.png" class="legend-icon">
-        <span>Gasolinera del Bienestar</span>
-      </li>
+        <li onclick="zoomTo('Gasolinera_del_Bienestar')"><img src="iconos/punto_2.png" class="legend-icon"><span>Gasolinera del Bienestar</span></li>
         
-      <li onclick="zoomTo('Guardia_Nacional')">
-        <span style="margin-left: 30px;">Guardía Nacional</span>
-      </li>
+        <li onclick="zoomTo('Guardia_Nacional')"><span>Guardía Nacional</span></li>
         
-      <li onclick="zoomTo('Estacionamiento_Calakmul')">
-        <img src="iconos/punto_4.png" class="legend-icon">
-        <span>Estacionamiento Calakmul</span>
-      </li>
+        <li onclick="zoomTo('Estacionamiento_Calakmul')"><img src="iconos/punto_4.png" class="legend-icon"><span>Estacionamiento Calakmul</span></li>
         </ul></div>
-  <div class="legend-group">
-    <div class="legend-title" onclick="this.classList.toggle('expanded')"><strong>Zonas Arqueológicas</strong></div>
-    <ul class="legend-items" style="display:none">
+    <div class="legend-group">
+      <div class="legend-title" onclick="this.classList.toggle('expanded')" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Zonas Arqueológicas</div>
+      <ul class="legend-items" style="display:none">
     
-      <li onclick="zoomTo('Zona_Arqueologica_Xpuhil')">
-        <img src="iconos/punto_12.png" class="legend-icon">
-        <span>Zona Arqueológica Xpuhil</span>
-      </li>
+        <li onclick="zoomTo('Zona_Arqueologica_Xpuhil')"><img src="iconos/punto_12.png" class="legend-icon"><span>Zona Arqueológica Xpuhil</span></li>
         
-      <li onclick="zoomTo('Zona_Arqueologica_Chicanna')">
-        <img src="iconos/punto_17.png" class="legend-icon">
-        <span>Zona Arqueológica Chicanná</span>
-      </li>
+        <li onclick="zoomTo('Zona_Arqueologica_Chicanna')"><img src="iconos/punto_17.png" class="legend-icon"><span>Zona Arqueológica Chicanná</span></li>
         
-      <li onclick="zoomTo('Zona_Arqueologica_de_Becan')">
-        <img src="iconos/punto_15.png" class="legend-icon">
-        <span>Zona Arqueológica de Becán</span>
-      </li>
+        <li onclick="zoomTo('Zona_Arqueologica_de_Becan')"><img src="iconos/punto_15.png" class="legend-icon"><span>Zona Arqueológica de Becán</span></li>
         
-      <li onclick="zoomTo('Zona_Arqueologica_de_Calakmul')">
-        <img src="iconos/punto_14.png" class="legend-icon">
-        <span>Zona Arqueológica de Calakmul</span>
-      </li>
+        <li onclick="zoomTo('Zona_Arqueologica_de_Calakmul')"><img src="iconos/punto_14.png" class="legend-icon"><span>Zona Arqueológica de Calakmul</span></li>
         
-      <li onclick="zoomTo('Zona_Arqueologica_de_Nadzcaan')">
-        <img src="iconos/punto_13.png" class="legend-icon">
-        <span>Zona Arqueológica de Nadzca'an</span>
-      </li>
+        <li onclick="zoomTo('Zona_Arqueologica_de_Nadzca'an')"><img src="iconos/punto_13.png" class="legend-icon"><span>Zona Arqueológica de Nadzca'an</span></li>
         
-      <li onclick="zoomTo('Zona_Arqueologica_de_Balamkú')">
-        <img src="iconos/punto_16.png" class="legend-icon">
-        <span>Zona Arqueológica de Balamkú</span>
-      </li>
+        <li onclick="zoomTo('Zona_Arqueologica_de_Balamku')"><img src="iconos/punto_16.png" class="legend-icon"><span>Zona Arqueológica de Balamkú</span></li>
         </ul></div>
-  <div class="legend-group">
-    <div class="legend-title" onclick="this.classList.toggle('expanded')"><strong>Transportes</strong></div>
-    <ul class="legend-items" style="display:none">
+    <div class="legend-group">
+      <div class="legend-title" onclick="this.classList.toggle('expanded')" style="font-weight:bold;font-size:1.1em;font-family:'Noto Sans';">Transportes</div>
+      <ul class="legend-items" style="display:none">
     
-      <li onclick="zoomTo('Estacion_Centenario')">
-        <img src="iconos/punto_6.png" class="legend-icon">
-        <span>Estación Centenario</span>
-      </li>
+        <li onclick="zoomTo('Estacion_Centenario')"><img src="iconos/punto_6.png" class="legend-icon"><span>Estación Centenario</span></li>
         
-      <li onclick="zoomTo('Estacion_Calakmul')">
-        <img src="iconos/punto_3.png" class="legend-icon">
-        <span>Estación Calakmul</span>
-      </li>
+        <li onclick="zoomTo('Estacion_Calakmul')"><img src="iconos/punto_3.png" class="legend-icon"><span>Estación Calakmul</span></li>
         
-      <li onclick="zoomTo('Estacion_Xpujil')">
-        <img src="iconos/punto_5.png" class="legend-icon">
-        <span>Estación Xpujil</span>
-      </li>
+        <li onclick="zoomTo('Estacion_Xpujil')"><img src="iconos/punto_5.png" class="legend-icon"><span>Estación Xpujil</span></li>
         
-      <li onclick="zoomTo('Camino_a_la_Zona_Arqueoloica_de_Calakmul')">
-        <span style="margin-left: 30px;">Camino a la Zona Arqueolóica de Calakmul</span>
-      </li>
+        <li onclick="zoomTo('Camino_a_la_Zona_Arqueoloica_de_Calakmul')"><span>Camino a la Zona Arqueolóica de Calakmul</span></li>
         
-      <li onclick="zoomTo('Carretera_Champoton-Escarcega')">
-        <span style="margin-left: 30px;">Carretera Champotón-Escárcega</span>
-      </li>
+        <li onclick="zoomTo('Carretera_Champoton-Escarcega')"><span>Carretera Champotón-Escárcega</span></li>
         
-      <li onclick="zoomTo('Carretera_Escarcega-Chetumal')">
-        <span style="margin-left: 30px;">Carretera Escárcega-Chetumal</span>
-      </li>
+        <li onclick="zoomTo('Carretera_Escarcega-Chetumal')"><span>Carretera Escárcega-Chetumal</span></li>
         
-      <li onclick="zoomTo('Trazo_Tren_Maya')">
-        <span style="margin-left: 30px;">Trazo Tren Maya</span>
-      </li>
+        <li onclick="zoomTo('Trazo_Tren_Maya')"><span>Trazo Tren Maya</span></li>
         </ul></div></div>
